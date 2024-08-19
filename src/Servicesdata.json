@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development",
+    "description": "We create bespoke websites tailored to your specific requirements, ensuring a perfect fit for your brand and business goals. From dynamic, interactive sites to sophisticated web applications, we bring your vision to life with precision and creativity."
+  },
+  {
+    "id": 2,
+    "title": "App Development",
+    "description": "Our app development services focus on building robust and scalable mobile applications for both iOS and Android platforms. We create user-friendly and high-performance apps that meet your business needs and engage your audience effectively."
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design",
+    "description": "We design user-friendly interfaces with a keen focus on enhancing user experience. Our UI/UX design services ensure that your application is intuitive, engaging, and visually appealing, helping you create a memorable and effective user journey."
+  },
+  {
+    "id": 4,
+    "title": "IOT",
+    "description": "we provide advanced Edge AI and IoT solutions to enhance your business operations. Our expertise helps you integrate intelligent systems and smart devices for real-time data analysis and improved efficiency."
+  },
+  {
+    "id": 5,
+    "title": "ProtoType Development",
+    "description": "we offer expert prototype development to bring your ideas to life. Our team creates detailed and functional prototypes to help you visualize and refine your concepts before full-scale production."
+  },
+  {
+    "id": 6,
+    "title": "Edge AI",
+    "description": "Leverage the power of Artificial Intelligence to create smarter, more intuitive websites. Our AI-powered web development services include features like personalized content recommendations."
+  }
+]

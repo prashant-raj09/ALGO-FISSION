@@ -1,0 +1,141 @@
+.contact-container {
+    margin-top: 200px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between columns */
+    width: 70%; /* Reduced width */
+    align-items: stretch; /* Ensure both columns have equal height */
+    margin-bottom: 2rem; /* Space below the content */
+  }
+  
+  .contact-form-container,
+  .contact-info {
+    flex: 1;
+    max-width: 70%; /* Ensure containers do not exceed their parent's width */
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px #2980b9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 0.5px solid #2980b9;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .contact-form-container {
+    color: #2980b9;
+  }
+  
+  .contact-form-container:hover,
+  .contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px #2980b9;
+  }
+  
+  .contact-form h2,
+  .contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2980b9; /* Change this to match your page color scheme */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem; /* Increased padding for better input field appearance */
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #007bff; /* Change this to match your page color scheme */
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #007bff; /* Change this to match your page color scheme */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #0056b3; /* Darker shade for hover effect */
+    transform: translateY(-2px);
+  }
+  
+  .contact-details {
+    margin-top: 1rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-item:hover .icon {
+    color: #2980b9; /* Change this to match your page color scheme */
+  }
+  
+  .additional-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 70%; /* Align with contact-content width */
+    margin-top: 2rem; /* Space between contact-content and additional cards */
+  }
+  
+  .additional-card {
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px #2980b9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 0.5px solid #2980b9;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .additional-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .additional-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #2980b9; /* Change this to match your page color scheme */
+    transition: color 0.3s ease;
+  }
+  
+  .additional-card:hover h3 {
+    color: #0056b3; /* Darker shade for hover effect */
+  }
+  
+  .additional-card p {
+    font-size: 1rem;
+    color: #333;
+  }
+  

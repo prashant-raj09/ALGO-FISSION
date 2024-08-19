@@ -1,0 +1,194 @@
+/* Base styles */
+/* Nav-Bar-CSS */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    background-color: whitesmoke;
+    color: #2980b9;
+    box-shadow: 0 8px 16px #2980b9;
+    z-index: 1000; /* Ensure the navbar stays above other content */
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .navbar-logo img {
+    width: 200px; /* Set the logo width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    border-radius: 80%;
+    
+  }
+  
+  .navbar-logo img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px #2980b9;
+    filter: brightness(1.1); /* Slightly brighten the logo on hover */
+    border-radius: 80%;
+    cursor: pointer;
+    background-color: rgb(191, 245, 205);
+  }
+  
+  .navbar-left ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex: 1; /* Allow the left section to take up remaining space */
+  }
+  
+  .navbar-left ul li {
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
+    text-decoration: none;
+    color: #2980b9;
+  }
+  
+  .navbar-left ul li svg {
+    margin-right: 20px; /* Space between icon and text */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-left ul li:hover {
+    color: #2980b9;
+    transform: translateY(-2px);
+    text-shadow: 0 8px 16px #2980b9;
+    text-decoration: none;
+  }
+  
+  .navbar-left ul li:hover svg {
+    color: #2980b9;
+    margin-right: 20px;
+    transform: translateY(-2px);
+    text-shadow: 0 8px 16px #2980b9;
+    cursor: pointer;
+  }
+  
+  .navbar-left ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #2980b9;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-left ul li:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right .login-button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: nowrap; /* Prevent button text from wrapping */
+  }
+  
+  .navbar-right .login-button:hover {
+    background-color: #1a5981;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* When Logged In */
+  .is-logged-in .navbar-right .login-button {
+    background-color: #27ae60;
+  }
+  
+  .is-logged-in .navbar-right .login-button:hover {
+    background-color: #1e8449;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Navbar shrinking on scroll */
+  .scrolled .navbar {
+    padding: 8px 30px;
+    background-color: #f0f0f0; /* Slightly darker background on scroll */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 15px;
+    }
+  
+    .navbar-logo {
+      margin-bottom: 15px;
+    }
+  
+    .navbar-left ul {
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-left ul li {
+      margin: 15px 0;
+    }
+  
+    .navbar-right .login-button {
+      width: 100%;
+      padding: 15px 0;
+    }
+  
+    .navbar-left ul li:hover {
+      transform: translateX(5px);
+    }
+  
+    .navbar-left ul li:hover::after {
+      left: 50%;
+      width: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+      flex-direction: row;
+      padding: 15px 20px;
+    }
+  
+    .navbar-left ul li {
+      margin-right: 15px;
+    }
+  
+    .navbar-right .login-button {
+      padding: 10px 15px;
+    }
+  
+    .navbar-left ul li:hover::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+  

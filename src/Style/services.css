@@ -1,0 +1,58 @@
+/* Services container */
+.services-container {
+    padding: 40px 20px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+  
+  /* Services title */
+  .services-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .services-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .services-info {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effects for title */
+  .services-title:hover .services-heading {
+    color: #2980b9;
+  }
+  
+  .services-title:hover .services-info {
+    color: #555;
+  }
+  
+  /* Services cards container */
+  .services-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+  
+    .services-heading {
+      font-size: 2rem;
+    }
+  
+    .services-info {
+      font-size: 1rem;
+    }
+  }
+  
